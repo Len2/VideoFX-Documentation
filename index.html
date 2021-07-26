@@ -255,7 +255,8 @@
                         We can't wait to see what you build.
                     </p>
                     <hr>
-                    <h4> Why Laravel</h4>
+                    <img class="img-fluid border" src="assets/images/templates/laravel.png">
+                    <hr>
                     <p>
                         There are a variety of tools and frameworks available to you when building a web application.
                         However, we believe Laravel is the best choice for building modern, full-stack web applications.
@@ -391,47 +392,79 @@
                     <!-- Color Schemes
                     ============================ -->
                     <section id="idocs_color_schemes">
-                        <h2>Color Schemes</h2>
-                        <p>You can change your Website's Color Scheme in an instant. We have build <strong>10
-                            Color</strong> css file for change template primary color.</p>
+                        <h2>Database configuration</h2>
+                        <p>
+                            Almost every modern web application interacts with a database.
+                            Laravel makes interacting with databases extremely simple across a variety of supported
+                            databases using raw SQL, a fluent query builder, and the Eloquent ORM.
+                            Currently, Laravel provides first-party support for four databases:
+                        </p>
                         <ul>
-                            <li><code>color-blue.css</code> - Blue Color</li>
-                            <li><code>color-brown.css</code> - Brown Color</li>
-                            <li><code>color-cyan.css</code> - Cyan Color</li>
-                            <li><code>color-green.css</code> - Green Color</li>
-                            <li><code>color-orange.css</code> - Orange Color</li>
-                            <li><code>color-indigo.css</code> - Indigo Color</li>
-                            <li><code>color-purple.css</code> - Purple Color</li>
-                            <li><code>color-red.css</code> - Red Color</li>
-                            <li><code>color-teal.css</code> - Teal Color</li>
-                            <li><code>color-yellow.css</code> - Yellow Color</li>
+                            <li><code>MySQL 5.7+</code> - MySQL</li>
+                            <li><code> PostgreSQL 9.6+</code> - PostgreSQL</li>
+                            <li><code> SQLite 3.8.8+</code> - SQLite</li>
+                            <li><code> SQL Server 2017+ </code> - SQL Server</li>
                         </ul>
-                        <p>Simply add Color CSS file link it in the Document <code>&lt;head&gt;</code>.<br>
-                            Make sure you add the <code>css/color-blue.css</code> stylesheet in your head after the
-                            <code>css/stylesheet.css</code> file linking from above mentioned 10 color css file.</p>
-                        <p><strong>For Example:</strong></p>
-          <pre><code class="html">&lt;head&gt;
-              &lt;!-- Stylesheet
-              ============================== --&gt;
-              &lt;!-- Bootstrap --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap.min.css&quot;
-              /&gt;
-              &lt;!-- Font Awesome Icon --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/font-awesome/css/all.min.css&quot;
-              /&gt;
-              &lt;!-- Magnific Popup --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/magnific-popup/magnific-popup.min.css&quot;
-              /&gt;
-              &lt;!-- Highlight Syntax --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/highlight.js/styles/github.css&quot;
-              /&gt;
-              &lt;!-- Custom Stylesheet --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/stylesheet.css&quot; /&gt;
 
-              &lt;!-- Here goes your Colors Css --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/color-orange.css&quot;
-              /&gt;
-              &lt;/head&gt;</code></pre>
+
+                        <p>For Configuration just should be changed .env.example file in .env and than to continue
+                            writing property of .env file</p>
+                        <p>Before to config your file should be created Database in MySQL</p>
+                        <p>Query for Create: <code>CREATE DATABASE database_name </code></p>
+
+          <pre><code class="html">
+              APP_NAME=VideoFx
+              APP_ENV=local
+              APP_KEY=
+              APP_DEBUG=true
+              APP_LOG_LEVEL=debug
+              APP_URL=http://localhost:8000/
+
+              DB_CONNECTION=mysql
+              DB_HOST=127.0.0.1
+              DB_PORT=3306
+              <strong>
+                  DB_DATABASE=Your Database name
+                  DB_USERNAME=Your Database username
+                  DB_PASSWORD=Your Database password
+              </strong>
+
+
+              BROADCAST_DRIVER=log
+              CACHE_DRIVER=array
+              SESSION_DRIVER=file
+              QUEUE_DRIVER=sync
+
+              REDIS_HOST=127.0.0.1
+              REDIS_PASSWORD=null
+              REDIS_PORT=6379
+
+              MAIL_DRIVER=sendmail
+              MAIL_HOST=smtp.gmail.com
+              MAIL_PORT=465
+              MAIL_USERNAME=
+              MAIL_PASSWORD=
+              MAIL_ENCRYPTION=
+
+              PUSHER_APP_ID=
+              PUSHER_APP_KEY=
+              PUSHER_APP_SECRET=
+
+              STRIPE_KEY=
+              STRIPE_SECRET=
+              ClientID=
+              ClientSecret=
+
+              Categorie1=
+              Categorie2=
+              Categorie3=
+              Categorie4=
+              Categorie5=
+              Categorie6=
+              Categorie7=
+
+
+          </code></pre>
                     </section>
 
                     <hr class="divider">
@@ -439,65 +472,67 @@
                     <!-- Customization
                     ============================ -->
                     <section id="idocs_theme_customization">
-                        <h2>Theme Customization</h2>
-                        <p>We have include a Custom CSS File in the <code>css</code> Folder so that you can better
-                            handle your Customizations for New Styles or
-                            Overwriting Default Theme Styles. Simply add all your Custom CSS Codes in the <code>css/custom.css</code>
-                            File and link it in the Document <code>&lt;head&gt;</code> after the <code>css/stylesheet.css</code>
-                            Linking. Also make sure that this is the Last Linked CSS File in the Document <code>&lt;head&gt;</code>
-                            so that your Custom CSS Styles are Overwritten properly.</p>
-          <pre><code class="html">&lt;head&gt;
-              &lt;!-- Stylesheet
-              ============================== --&gt;
-              &lt;!-- Bootstrap --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap.min.css&quot;
-              /&gt;
-              &lt;!-- Font Awesome Icon --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/font-awesome/css/all.min.css&quot;
-              /&gt;
-              &lt;!-- Magnific Popup --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/magnific-popup/magnific-popup.min.css&quot;
-              /&gt;
-              &lt;!-- Highlight Syntax --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/highlight.js/styles/github.css&quot;
-              /&gt;
-              &lt;!-- Custom Stylesheet --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/stylesheet.css&quot; /&gt;
+                        <h2>How to install</h2>
+                        <p>
+                            The installation method is greatly simplified.
+                            If you have all the necessary enveriment in your device (laptop or Pc) and have configured
+                            .env file all you have to do is follow these commands
+                        </p>
 
-              &lt;!-- Here goes your custom.css
-              ============================================= --&gt;
-              &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/custom.css&quot; /&gt;
-              &lt;/head&gt;</code></pre>
+                        1) <code>composer update</code> <br>
+                        2) <code>composer dump-autoload</code> <br>
+                        <p>3) Make sure if you have configured .env (Look at "Configure Database")</p>
+                        4) <code>php artisan key:generate</code> <br>
+                        5) <code>php artisan migrate</code> <br>
+                        6) <code>php artisan db:seed</code> <br>
+                        7) <code>php artisan storage:link</code> <br>
+                        8) <code>php artisan serve</code> <br><br>
+
+                        <p><strong>Congratulations you are LIVE in: </strong><a target="_blank"
+                                                                                href="http://localhost:8000/">http://localhost:8000/</a>
+                        </p>
+
+
                     </section>
+
+                    <hr class="divider">
+                    <section id="plugins">
+                        <h1>Plugins Library</h1>
+                        <h4>Here you will find all the plugins that VideoFX has built from scratch</h4>
+                        <ul>
+                            <li><code>"arielmejiadev/larapex-charts": "^2.1"</code> - larapex</li>
+                            <li><code>"barryvdh/laravel-dompdf": "^0.8.2"</code> - dompdf</li>
+                            <li><code>"hardevine/shoppingcart": "^3.0"</code> - shoppingcart with cookie</li>
+                            <li><code>"intervention/image": "^2.4"</code> - Image resize</li>
+                            <li><code>"laracasts/flash": "^3.0"</code> - Flash notification</li>
+                            <li><code>"paypal/rest-api-sdk-php": "*"</code> - PayPal</li>
+                            <li><code>"shanmuga/laravel-entrust": "^2.2"</code> - Entrust ACL</li>
+                            <li><code>"stripe/stripe-php": "^6.31"</code> - Stripe</li>
+                        </ul>
+                    </section>
+
 
                     <hr class="divider">
 
                     <!-- Logo Settings
                     ============================ -->
                     <section id="idocs_logo_settings">
-                        <h2>Logo Settings</h2>
-                        <img class="img-fluid border" src="assets/images/templates/Banner.jpg">
-                        <p>The Logo Container can be found in the Header Container - <code>&lt;header&gt;</code></p>
-          <pre><code class="html">&lt;!-- Logo --&gt;
-              &lt;a class=&quot;logo ml-3 ml-md-0&quot; href=&quot;index.html&quot; title=&quot;iDocs&quot;&gt;
-              &lt;img src=&quot;images/logo-light.png&quot; alt=&quot;iDocs&quot;/&gt;
-              &lt;/a&gt;
-              &lt;!-- Logo End --&gt;
-          </code></pre>
+                        <h2>Video - Install & Demo </h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7e90gBu4pas"
+                                    allowfullscreen></iframe>
+                        </div>
                     </section>
 
 
                     <hr class="divider">
 
-                    <section id="plugins">
-                        <h1>Test</h1>
-                    </section>
-                    <hr class="divider">
 
                     <!-- Layout
                     ============================ -->
                     <section id="idocs_layout">
-                        <h2>Layout</h2>
+                        <h1>Module of VideoFx</h1>
+                        <img class="img-fluid border" src="assets/images/templates/Banner.jpg">
                         <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
                     </section>
 
@@ -1493,8 +1528,10 @@
                                         <div id="collapse1" class="collapse" aria-labelledby="heading1"
                                              data-parent="#popularTopics">
                                             <div class="card-body">
-                                                There are a variety of tools and frameworks available to you when building a web application.
-                                                However, we believe Laravel is the best choice for building modern, full-stack web applications.
+                                                There are a variety of tools and frameworks available to you when
+                                                building a web application.
+                                                However, we believe Laravel is the best choice for building modern,
+                                                full-stack web applications.
                                             </div>
                                         </div>
                                     </div>
@@ -1524,10 +1561,13 @@
                                         <div id="collapse3" class="collapse" aria-labelledby="heading3"
                                              data-parent="#popularTopics">
                                             <div class="card-body">
-                                                VideoFx is a CRM with E-Commerce framework built on top of the hottest opensource technologies such as Laravel, a PHP and MySQL Database.
-                                                The mein feature of VideoFx is management videos module but has a lot of feature.
+                                                VideoFx is a CRM with E-Commerce framework built on top of the hottest
+                                                opensource technologies such as Laravel, a PHP and MySQL Database.
+                                                The mein feature of VideoFx is management videos module but has a lot of
+                                                feature.
                                                 The framework is very flexible and easy to use even for non-tech users.
-                                                VideoFx features an administration panel with a dashboard, sales data, a catalog for products and customer management.
+                                                VideoFx features an administration panel with a dashboard, sales data, a
+                                                catalog for products and customer management.
                                             </div>
                                         </div>
                                     </div>
@@ -1599,24 +1639,30 @@
                         <h2>Contact</h2>
                         <p>
                             Item support is a service provided by many authors on ThemeForest and CodeCanyon.
-                            Having support for your purchased item means that the author will be available to you, the buyer, to iron-out any potential issues you have in using the item.
+                            Having support for your purchased item means that the author will be available to you, the
+                            buyer, to iron-out any potential issues you have in using the item.
                         </p>
                         <p>
-                            This page will tell you all about what you can expect from authors who sell supported items. Here’s a summary:.
+                            This page will tell you all about what you can expect from authors who sell supported items.
+                            Here’s a summary:.
                         </p>
                         <a href="https://themeforest.net/page/item_support_policy">Item Support Policy</a>
 
 
                         <h4>Contact Social network:</h4>
                         <ul>
-                            <li>Email - <a target="_blank" href="mailto:devfortran@gmail.com">devfortran@gmail.com</a></li>
+                            <li>Email - <a target="_blank" href="mailto:devfortran@gmail.com">devfortran@gmail.com</a>
+                            </li>
                             <li>Live Chat - <a target="_blank" href="http://videofx.fortran-dev.com/">Live Chat</a></li>
-                            <li>Facebook - <a target="_blank" href="https://www.facebook.com/FortranDev/">Facebook</a></li>
-                            <li>Linkedin- <a target="_blank" href="https://www.linkedin.com/in/fortran-dev-11ba01212/">Linkedin</a></li>
-                            <li>Instagram - <a target="_blank" href="https://www.instagram.com/fortran.dev/">Instagram</a></li>
+                            <li>Facebook - <a target="_blank" href="https://www.facebook.com/FortranDev/">Facebook</a>
+                            </li>
+                            <li>Linkedin- <a target="_blank" href="https://www.linkedin.com/in/fortran-dev-11ba01212/">Linkedin</a>
+                            </li>
+                            <li>Instagram - <a target="_blank"
+                                               href="https://www.instagram.com/fortran.dev/">Instagram</a></li>
                         </ul>
 
-                        <h4>Don’t forget to Rate VideoFX
+                        <h4>Don’t forget to rate VideoFX
                             <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
                                     class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
                                     class="fas fa-star text-warning"></i>
@@ -1709,9 +1755,11 @@
                             <li><span class="badge badge-danger">Fixed</span> Some minor url_path for production mode
                             </li>
                             <li><span class="badge badge-danger">Fixed</span> Some minor bugs for responsive</li>
-                            <li><span class="badge badge-info">Updated</span> Laravel upgrade from 5.4 -> 6.0 -> 7.0 -> 8.0</li>
+                            <li><span class="badge badge-info">Updated</span> Laravel upgrade from 5.4 -> 6.0 -> 7.0 ->
+                                8.0
+                            </li>
                             <li><span class="badge badge-info">Updated</span> Laravel package update</li>
-                            <li><span class="badge badge-info">Updated</span> Customize code </li>
+                            <li><span class="badge badge-info">Updated</span> Customize code</li>
                         </ul>
 
                         <hr class="divider">
