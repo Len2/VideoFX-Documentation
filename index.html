@@ -1379,164 +1379,61 @@
                     ============================ -->
                     <section id="idocs_social_icon">
                         <h3>PDF-generator</h3>
-                        <p>Social links with different styles. See below code for more information.</p>
-            <pre><code class="html">&lt;div class=&quot;d-flex flex-column&quot;&gt;
-                &lt;ul class=&quot;social-icons&quot;&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.facebook.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.twitter.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Google&quot;&gt;&lt;i class=&quot;fab fa-google&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.linkedin.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Linkedin&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.youtube.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Youtube&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.instagram.com/&quot; target=&quot;_blank&quot;
-                title=&quot;&quot; data-original-title=&quot;Instagram&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;/div&gt;
-            </code></pre>
-                        <h4>Options:</h4>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type Class</th>
-                                    <th>Features</th>
-                                    <th>Code Example</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Default (Dark)</td>
-                                    <td>Default Social Icon with Dark Color</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.social-icons-light</code></td>
-                                    <td>Social Icon with Light Color</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-light&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.social-icons-muted</code></td>
-                                    <td>Social Icon with Muted Color</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-muted&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.social-icons-sm</code></td>
-                                    <td>Social Icon with Small Icon Size</td>
-                                    <td>
-	  <pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-sm&quot;&gt;
-          .......
-          &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.social-icons-lg</code></td>
-                                    <td>Social Icon with Large Icon Size</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-lg&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>Pdf generator is built through DomPdf plugin<br>
+                            If you want to change or add additional module read the DomPdf documentation
+                            <a target="_blank" href="https://github.com/dompdf/dompdf/blob/master/README.md" > GitHub DomPdf.</a><br>
+                            Pdf  generated in Subscribe module. You can download the entire list of subscribed users
+                            <a  target="_blank" href="http://videofx.fortran-dev.com/dashboard/subscribes"><i
+                                    class="fas fa-external-link-alt"></i> </a>
+                        </p>
                     </section>
-
                     <hr class="divider">
-
                     <!-- Accordion
                     ============================ -->
                     <section id="idocs_accordion">
                         <h2>Facebook (Comment and Share button)</h2>
-                        <p>You can extend the default collapse behavior to create an accordion. To properly achieve the
-                            accordion style, be sure to use <code>.accordion</code> as a wrapper.</p>
-                        <p>See below image and code for more inforamtion.</p>
-                        <p><a class="popup-img" href="assets/images/accordion.jpg"><img class="img-fluid border"
-                                                                                        src="assets/images/accordion.jpg"
-                                                                                        alt=""></a></p>
-			<pre><code class="html">&lt;div class=&quot;accordion&quot; id=&quot;accordionDefault&quot;&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot; id=&quot;headingOne&quot;&gt;
-                &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseOne&quot;
-                aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;Accordion Title&lt;/a&gt; &lt;/h5&gt;
-                &lt;/div&gt;
-                &lt;div id=&quot;collapseOne&quot; class=&quot;collapse show&quot; aria-labelledby=&quot;headingOne&quot;
-                data-parent=&quot;#accordionDefault&quot;&gt;
-                &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot; id=&quot;headingTwo&quot;&gt;
-                &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot;
-                data-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;Accordion
-                Title&lt;/a&gt; &lt;/h5&gt;
-                &lt;/div&gt;
-                &lt;div id=&quot;collapseTwo&quot; class=&quot;collapse&quot; aria-labelledby=&quot;headingTwo&quot;
-                data-parent=&quot;#accordionDefault&quot;&gt;
-                &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot; id=&quot;headingThree&quot;&gt;
-                &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot;
-                data-target=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;Accordion
-                Title&lt;/a&gt; &lt;/h5&gt;
-                &lt;/div&gt;
-                &lt;div id=&quot;collapseThree&quot; class=&quot;collapse&quot; aria-labelledby=&quot;headingThree&quot;
-                data-parent=&quot;#accordionDefault&quot;&gt;
-                &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-            </code></pre>
-                        <h4>Options:</h4>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type Class</th>
-                                    <th>Features</th>
-                                    <th>Code Example</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><code>.accordion-alternate</code></td>
-                                    <td>Alternate Minimal Style for the accordions.</td>
-                                    <td><pre class="mb-0"><code>&lt;div class=&quot;accordion accordion-alternate&quot;
-                                        id=&quot;accordionDefault&quot;&gt;
-                                        .......
-                                        &lt;/div&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.arrow-right</code></td>
-                                    <td>For set arrow in right side in accordions</td>
-                                    <td><pre class="mb-0"><code>&lt;div class=&quot;accordion arrow-right&quot; id=&quot;accordionDefault&quot;&gt;
-                                        .......
-                                        &lt;/div&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>For comments and shares we have built with Facebook Api Graph</p>
+                        <p>For more Please look in facebook for Developers<br>
+                            <a  target="_blank" href="https://developers.facebook.com/docs/plugins/share-button/">Share Button in facebook for Developers</a><br>
+                            <a  target="_blank" href="https://developers.facebook.com/docs/plugins/comments">Comment in facebook for Developers</a>
+                        </p>
+                        <p>Once you have followed all the instructions from Facebook for developers then you can put the code in the VideFx dashboard seetings
+                            <a  target="_blank" href="http://videofx.fortran-dev.com/dashboard/settings/1/edit"><i
+                                    class="fas fa-external-link-alt"></i> </a>
+                        </p>
+<!--                        <h4>Options:</h4>-->
+<!--                        <div class="table-responsive">-->
+<!--                            <table class="table table-bordered">-->
+<!--                                <thead>-->
+<!--                                <tr>-->
+<!--                                    <th>Type Class</th>-->
+<!--                                    <th>Features</th>-->
+<!--                                    <th>Code Example</th>-->
+<!--                                </tr>-->
+<!--                                </thead>-->
+<!--                                <tbody>-->
+<!--                                <tr>-->
+<!--                                    <td><code>.accordion-alternate</code></td>-->
+<!--                                    <td>Alternate Minimal Style for the accordions.</td>-->
+<!--                                    <td><pre class="mb-0"><code>&lt;div class=&quot;accordion accordion-alternate&quot;-->
+<!--                                        id=&quot;accordionDefault&quot;&gt;-->
+<!--                                        .......-->
+<!--                                        &lt;/div&gt;</code></pre>-->
+<!--                                    </td>-->
+<!--                                </tr>-->
+<!--                                <tr>-->
+<!--                                    <td><code>.arrow-right</code></td>-->
+<!--                                    <td>For set arrow in right side in accordions</td>-->
+<!--                                    <td><pre class="mb-0"><code>&lt;div class=&quot;accordion arrow-right&quot; id=&quot;accordionDefault&quot;&gt;-->
+<!--                                        .......-->
+<!--                                        &lt;/div&gt;</code></pre>-->
+<!--                                    </td>-->
+<!--                                </tr>-->
+<!--                                </tbody>-->
+<!--                            </table>-->
+<!--                        </div>-->
                     </section>
-
                     <hr class="divider">
-
                     <!-- Helper Classes
                     ============================ -->
                     <section id="idocs_helper_classes">
@@ -1551,13 +1448,11 @@
                                     class="fas fa-external-link-alt"></i> </a><br>
                             Video Premium Configuration - Description for Video with type "Premium" <a  target="_blank" href="http://videofx.fortran-dev.com/video/kids4"><i
                                     class="fas fa-external-link-alt"></i> </a><br>
-                            Fb Share - Code for FaceBook Graph api in video and playlist
-                            Comment  - Code for FaceBook Graph api in video and playlist
+                            Fb Share - Code for Facebook Graph api in video and playlist
+                            Comment  - Code for Facebook Graph api in video and playlist
                             Logo     - Change logo,icon and logo mail of Video Platform
                         </p>
                     </section>
-
-
                     <!-- FAQ
                     ============================ -->
                     <section id="idocs_faq">
