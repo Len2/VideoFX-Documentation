@@ -1158,102 +1158,8 @@
 
                     <hr class="divider">
 
-                    <section id="idocs_icons">
-                        <h2>Orders</h2>
-                        <p>Order management is the order-to-cash sales process that sits at the heart of any goods-based
-                            B2C and B2B company. Put simply, it’s the end-to-end cycle of receiving and processing a
-                            customer order through to fulfillment. Order management is not conducted in isolation; it
-                            relies upon almost every department in a company: from a customer service team to the
-                            warehouse staff, the accounting department through to delivery partners. When mastered
-                            effectively, order management ensures a business’s workflow runs smoothly by establishing
-                            efficient processes to keep it moving forward; maintaining customer satisfaction and
-                            protecting a company’s reputation.</p>
-                        <p>Most ecommerce brands are unable to grow without an order management system in place.
-                            Customers expect efficient, cost-effective, and personalized order fulfillment.
-                            There is no room for manual error.
-                            Employees should be focused on optimizing the brand experience, not triaging backorder SKUs,
-                            calling carriers, or printing documentation.</p>
-                        <p>In Video Fx orders are in <a target="_blank" href="http://videofx.fortran-dev.com/dashboard/orders"><i
-                                class="fas fa-external-link-alt"></i></a></p>
-                    </section>
-
-                    <hr class="divider">
-
-                    <section id="idocs_image">
-                        <h2>Cart-Shop</h2>
-                        <p>A shopping cart is a part of a software that maintains a record of the products that a
-                            shopper has chosen from the online store.
-                            It does the job of a store catalogue helping online shoppers with selecting the products
-                            they wish to purchase, reviewing their selected products, modifying their selections, adding
-                            or removing products, and purchasing the products.</p>
-                        <p>Below are a few benefits of including shopping cart in an online store:</p>
-
-                        <ul>
-                            <li>It simplifies the payment process by becoming the mediator of the payment gateways and
-                                the website.
-                            </li>
-                            <li>It aids the customers in making informed purchase decisions.</li>
-                            <li>It helps in ranking in the Google Search Engine Results Page (SERP).</li>
-                            <li>It boosts the efficiency of an online store.</li>
-                            <li>It caters to provide the best user experience to the customers.</li>
-                            <li>It helps in maintaining a solid record of the transactions made by the customers.</li>
-                            <li>It helps in managing multiple customers efficiently.</li>
-                            <li>It improves the functionality of the ecommerce store.</li>
-                            <li>It enhances the online store’s flexibility.</li>
-                        </ul>
-                        <p>Video fx configuration for cart shop has in folder config/cart.php</p>
-                    </section>
-
-                    <hr class="divider">
-
-                    <!-- Components
-                    ============================ -->
-                    <section id="idocs_components">
-                        <h2>Email module</h2>
-
-                        <p>Sending email doesn't have to be complicated.
-                            Laravel provides a clean, simple email API powered by the popular SwiftMailer library.
-                            Laravel and SwiftMailer provide drivers for sending email via SMTP, Mailgun, Postmark,
-                            Amazon SES, and sendmail, allowing you to quickly get started sending mail through a local
-                            or cloud based service of your choice.
-                            Laravel's email services may be configured via your application's config/mail.php
-                            configuration file.
-                        </p>
-                        <p>VideoFx has mail system in Forget Password, Subscribe system, Add new Video if you are
-                            Subscribe</p>
-
-                        <h4>Configure Laravel Mail</h4>
-                        <p>Laravel uses config/mail.php file for storing details used in mail sending.
-                            This file contains settings like MAIL_DRIVER, MAIL_HOST, MAIL_PORT, etc. In order to
-                            successfully send an email, we need to provide these information.</p>
-                        <p>To add these required information, we need not edit this config/mail.php file, rather we
-                            would supply these details accordingly in the .env file.
-                            Thus, open your .env file which is located in your root directory of our application and
-                            checkout for this settings:
-                        </p>
-
-
-                        <pre><code class="html">
-                            MAIL_DRIVER=smtp
-                            MAIL_HOST=mailtrap.io
-                            MAIL_PORT=2525
-                            MAIL_USERNAME=null
-                            MAIL_PASSWORD=null
-                            MAIL_ENCRYPTION=null
-                        </code></pre>
-                    </section>
-
-                    <p>In the above settings , we configured MAIL_DRIVER as smtp, MAIL_HOST for Gmail as
-                        smtp.googlemail.com, MAIL_ PORT for Gmail as 465 and MAIL_ENCRYPTION method as ssl.
-                        The MAIL_USERNAME and PASSWORD should be replaced with your Gmail Email address and Password
-                        respectively.
-                        Since we are using Gmail SMTP, we need to change some security settings on our Google account,
-                        to give access to less secured applications.</p>
-
-                    <hr class="divider">
-
                     <!-- Tabs
-                    ============================ -->
+                  ============================ -->
                     <section id="idocs_tabs">
                         <h2>Products (Gallery,Slider)</h2>
                         <p class="text-4">Default <a
@@ -1340,94 +1246,191 @@
 
                     <hr class="divider">
 
-                    <!-- Tabs
-                    ============================ -->
                     <section id="idocs_sidebar_payment">
                         <h2>Payment (Stripe,PayPal)</h2>
-                        <p class="text-4">Default <a
-                                href="https://getbootstrap.com/docs/4.4/components/navs/#javascript-behavior">Bootstrap
-                            Nav</a> component combined with iDocs for unique tabs.</p>
-                        <p>See below image and code for more inforamtion.</p>
-                        <p><a class="popup-img" href="assets/images/tabs.jpg"><img class="img-fluid border"
-                                                                                   src="assets/images/tabs.jpg" alt=""></a>
+
+                        <img style="float: right" width="230" src="assets/images/stripe.png">
+                        <p><strong>Stripe</strong> is an online payment processing and credit card processing platform
+                            for businesses.
+                            When a customer buys a product online, the funds need to be delivered to the seller Insert
+                            Stripe. Stripe allows safe and efficient processing of funds via credit card or bank and
+                            transfers those funds to the sellers account.
+                            Stripes software includes both a payment processing platform, as well as a credit card
+                            payment gateway, and both are required in each successful online transaction making it the
+                            most efficient and simple software to choose for online payments. </p>
+                        <p>Business Models Supported by Stripe:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <li>Ecommerce sites</li>
+                                <li>Retail online stores</li>
+                                <li>B2B Platforms</li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>Software as a service</li>
+                                <li>B2C Marketplaces</li>
+                                <li>Nonprofits and fundraisers</li>
+                            </div>
+                        </div>
+                        <br>
+                        <strong>How To Set Up and Use Stripe </strong>
+                        <p>Setting up a Stripe Account for your business takes a few simple steps:</p>
+                        <p> 1. Register with Stripe <a target="_blank"
+                                                       href="https://dashboard.stripe.com/register">here</a> <br>
+                            2. Verify the email address you’ve signed up with in your inbox<br>
+                            3. Activate your account
+                        </p>
+                        <p>
+                            Add business details<br>
+                            Add banking information<br>
+                            Set up Stripe Connection<br>
+                            Complete your Platform Profile
+                        </p>
+                        <p>
+                            1. We have installed the Stripe plugin <br>
+                            2. Now, we need to set stripe key and secret. So first you can go on Stripe website and
+                            create development stripe account key and secret and add bellow: .env<br>
+                            <code>
+                                STRIPE_KEY=pk_test_reFxwbsm9cdCKASdTfxAR <br>
+                                STRIPE_SECRET=sk_test_oQMFWteJiPd4wj4AtgApY
+                            </code>
                         </p>
 
-                        <pre><code class="html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-                &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-                &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot;
-                role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot;
-                role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-                &lt;a class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#contact&quot;
-                role=&quot;tab&quot; aria-controls=&quot;contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;div class=&quot;tab-content my-3&quot; id=&quot;myTabContent&quot;&gt;
-                &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;
-                aria-labelledby=&quot;home-tab&quot;&gt;This is Tab Content Home&lt;/div&gt;
-                &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;
-                aria-labelledby=&quot;profile-tab&quot;&gt;This is Tab Content Profile&lt;/div&gt;
-                &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact&quot; role=&quot;tabpanel&quot;
-                aria-labelledby=&quot;contact-tab&quot;&gt;This is Tab Content Contact&lt;/div&gt;
-                &lt;/div&gt;</code></pre>
+                        <img style="float: right" width="150" src="assets/images/PayPal.png">
+                        <p>Since 1998, <strong>PayPal</strong> has been giving consumers alternative ways to make
+                            purchases and send and receive money online. PayPal lets you pay for things online with a
+                            bank account instead of a credit card and keeps your payment information hidden from
+                            merchants. It also makes sending money easy and, in most cases, free. PayPal has essentially
+                            made checks and costly wire transfer services obsolete.
+                        </p>
+                        <strong>How to create a PayPal account</strong>
+                        <p>You can create a PayPal account from your computer or mobile browser or directly through the
+                            PayPal app. Here are the steps you’ll need to follow:</p>
 
-                        <h4>Options:</h4>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type Class</th>
-                                    <th>Features</th>
-                                    <th>Code Example</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><code>Basic Navs</code></td>
-                                    <td>Basic Navs Style for the Tabs</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.nav-separator</code></td>
-                                    <td>Basic Navs Style with Separator for the Tabs</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.nav-tabs</code></td>
-                                    <td>Tabs Navs Style for the Tabs. For example - above Preview Example.</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot;
-                                        role=&quot;tablist&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><code>.nav-pills</code></td>
-                                    <td>Pills Navs Style for the Tabs</td>
-                                    <td><pre class="mb-0"><code>&lt;ul class=&quot;nav nav-pills&quot; id=&quot;myTab&quot;
-                                        role=&quot;tablist&quot;&gt;
-                                        .......
-                                        &lt;/ul&gt;</code></pre>
-                                    </td>
-                                </tr>
+                        <p>
+                            1. Go to paypal.com or download the PayPal app from the App Store or Google Play. <br>
+                            2. Click the blue “Sign Up” button.<br>
+                            3. Select “Personal Account.”<br>
+                            4. Add your phone number and you’ll receive a text with a security code to enter on the next screen.<br>
+                            5. Enter your legal first and last name, email address and a secure password.<br>
+                            6. Then, enter your mailing address and agree to PayPal’s privacy policy. This will create your account.<br>
+                            7. Finally, add a credit card, debit card, or bank account to your PayPal account.
+                        </p>
 
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>
+                            1. We have installed the PayPal plugin <br>
+                            2. Now, we need to set PayPal key and secret. So first you can go on PayPal website and
+                            create development PayPal account key and secret and add bellow: .env<br>
+                            <code>
+                                ClientID=pk_test_reFxwbsm9cdCKASdTfxAR <br>
+                                ClientSecret=sk_test_oQMFWteJiPd4wj4AtgApY
+                            </code>
+                        </p>
                     </section>
 
                     <hr class="divider">
-                    <!-- Social Icon
+
+                    <section id="idocs_icons">
+                        <h2>Orders</h2>
+                        <p>Order management is the order-to-cash sales process that sits at the heart of any goods-based
+                            B2C and B2B company. Put simply, it’s the end-to-end cycle of receiving and processing a
+                            customer order through to fulfillment. Order management is not conducted in isolation; it
+                            relies upon almost every department in a company: from a customer service team to the
+                            warehouse staff, the accounting department through to delivery partners. When mastered
+                            effectively, order management ensures a business’s workflow runs smoothly by establishing
+                            efficient processes to keep it moving forward; maintaining customer satisfaction and
+                            protecting a company’s reputation.</p>
+                        <p>Most ecommerce brands are unable to grow without an order management system in place.
+                            Customers expect efficient, cost-effective, and personalized order fulfillment.
+                            There is no room for manual error.
+                            Employees should be focused on optimizing the brand experience, not triaging backorder SKUs,
+                            calling carriers, or printing documentation.</p>
+                        <p>In Video Fx orders are in <a target="_blank"
+                                                        href="http://videofx.fortran-dev.com/dashboard/orders"><i
+                                class="fas fa-external-link-alt"></i></a></p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <section id="idocs_image">
+                        <h2>Cart-Shop</h2>
+                        <p>A shopping cart is a part of a software that maintains a record of the products that a
+                            shopper has chosen from the online store.
+                            It does the job of a store catalogue helping online shoppers with selecting the products
+                            they wish to purchase, reviewing their selected products, modifying their selections, adding
+                            or removing products, and purchasing the products.</p>
+                        <p>Below are a few benefits of including shopping cart in an online store:</p>
+
+                        <ul>
+                            <li>It simplifies the payment process by becoming the mediator of the payment gateways and
+                                the website.
+                            </li>
+                            <li>It aids the customers in making informed purchase decisions.</li>
+                            <li>It helps in ranking in the Google Search Engine Results Page (SERP).</li>
+                            <li>It boosts the efficiency of an online store.</li>
+                            <li>It caters to provide the best user experience to the customers.</li>
+                            <li>It helps in maintaining a solid record of the transactions made by the customers.</li>
+                            <li>It helps in managing multiple customers efficiently.</li>
+                            <li>It improves the functionality of the ecommerce store.</li>
+                            <li>It enhances the online store’s flexibility.</li>
+                        </ul>
+                        <p>Video fx configuration for cart shop has in folder config/cart.php</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Components
+                    ============================ -->
+                    <section id="idocs_components">
+                        <h2>Email module</h2>
+
+                        <p>Sending email doesn't have to be complicated.
+                            Laravel provides a clean, simple email API powered by the popular SwiftMailer library.
+                            Laravel and SwiftMailer provide drivers for sending email via SMTP, Mailgun, Postmark,
+                            Amazon SES, and sendmail, allowing you to quickly get started sending mail through a local
+                            or cloud based service of your choice.
+                            Laravel's email services may be configured via your application's config/mail.php
+                            configuration file.
+                        </p>
+                        <p>VideoFx has mail system in Forget Password, Subscribe system, Add new Video if you are
+                            Subscribe</p>
+
+                        <h4>Configure Laravel Mail</h4>
+                        <p>Laravel uses config/mail.php file for storing details used in mail sending.
+                            This file contains settings like MAIL_DRIVER, MAIL_HOST, MAIL_PORT, etc. In order to
+                            successfully send an email, we need to provide these information.</p>
+                        <p>To add these required information, we need not edit this config/mail.php file, rather we
+                            would supply these details accordingly in the .env file.
+                            Thus, open your .env file which is located in your root directory of our application and
+                            checkout for this settings:
+                        </p>
+
+
+                        <pre><code class="html">
+                            MAIL_DRIVER=smtp
+                            MAIL_HOST=mailtrap.io
+                            MAIL_PORT=2525
+                            MAIL_USERNAME=null
+                            MAIL_PASSWORD=null
+                            MAIL_ENCRYPTION=null
+                        </code></pre>
+                    </section>
+
+                    <p>In the above settings , we configured MAIL_DRIVER as smtp, MAIL_HOST for Gmail as
+                        smtp.googlemail.com, MAIL_ PORT for Gmail as 465 and MAIL_ENCRYPTION method as ssl.
+                        The MAIL_USERNAME and PASSWORD should be replaced with your Gmail Email address and Password
+                        respectively.
+                        Since we are using Gmail SMTP, we need to change some security settings on our Google account,
+                        to give access to less secured applications.</p>
+
+                    <hr class="divider">
+
+
+
+                    <hr class="divider">
+
+                    <!-- Tabs
+
+
                     ============================ -->
                     <section id="idocs_social_icon">
                         <h3>PDF-generator</h3>
