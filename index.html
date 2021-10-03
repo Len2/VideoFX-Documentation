@@ -849,30 +849,45 @@
                     ============================ -->
                     <section id="idocs_footer">
                         <h2>ADS (Pre-Roll, Mid-Roll)</h2>
-                        <p>The list of various footer types & its descriptions are provided below for your
-                            reference:</p>
-                        <h4>Light Footer</h4>
-                        <p>Footer with white background Color & Dark text. See below code for more inforamtion.</p>
-                        <pre><code class="html">&lt;!-- Footer
-              ============================================= --&gt;
-              &lt;footer id=&quot;footer&quot; class=&quot;section bg-light&quot;&gt;
-              &lt;div class=&quot;container&quot;&gt;
-              ..........
-              &lt;/div&gt;
-              &lt;/footer&gt;
-              &lt;!-- Footer end --&gt;</code></pre>
-                        <h4>Dark Footer</h4>
-                        <p>Footer with dark background color & Light text. See below code for more inforamtion.</p>
-                        <p>Add the <code>.bg-dark</code> and <code>.footer-text-light</code> Class to the
-                            <code>footer</code> Tag to display a Dark footer.</p>
-                        <pre><code class="html">&lt;!-- Footer
-              ============================================= --&gt;
-              &lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
-              &lt;div class=&quot;container&quot;&gt;
-              ..........
-              &lt;/div&gt;
-              &lt;/footer&gt;
-              &lt;!-- Footer end --&gt;</code></pre>
+                        <p>Ads inserted into videos are classified into Pre-Roll, Mid-Roll, Post-Roll ads based on their
+                            position or placement in the video i.e., before, in the middle, or after the video completes
+                            playback.</p>
+                        <p> <strong>Pre-roll</strong>  ad is an ad that is played before the video starts to play – which is why it has
+                            the word “pre” in its name. When you click on a video that you want to watch, and if that
+                            video has a pre-roll ad associated with it, then the player will first play the pre-roll ad
+                            and then begin to display the video that you requested.
+                            Pre-roll ads are a great way of monetizing VOD content and commonly used by AVOD services.
+                            There are a few distinct advantages to using pre-roll ads.<br>
+                            The user has explicitly requested the video and is interested in watching it. So, the
+                            likelihood of the user watching the ad is quite high, and his chances of abandoning the
+                            video simply because it contains an ad is low.<br>
+                            Ad fatigue probably hasn’t set in, and an AVOD service provider can get away with a couple
+                            of pre-roll ads right at the start of the video – especially if the video is popular and
+                            in-demand.
+                        </p>
+                        <p><strong>Mid-roll</strong> ads are those ads that are played by interrupting the video playback. The video is
+                            paused, the mid-roll ad is played, and after the mid-roll ad is completed or skipped, the
+                            video playback is resumed.
+                            All of us have experienced mid-roll ads while watching videos on YouTube or on AVOD-based
+                            streaming services. There are several points to be taken into consideration for mid-roll ads
+                            –<br>
+                            Placement – where do you place the mid-roll ads and how far apart? If you place several
+                            mid-roll ads close to each other, then the user is bound to get annoyed.<br>
+                            Frequency – how many mid-roll ads are you going to insert into the video? If your video is
+                            10 mins long and you insert two 30-second ads every one minute, then your user is probably
+                            going to flee! On the other hand, if you insert only two ads in a 10 min long video, is that
+                            going to help or hurt your bottom-line? There is a fine line between making income and
+                            annoying your users.<br>
+                            However, mid-roll ads are considered to be high-converting ad units with pretty high
+                            completion rates. I guess that comes down to the fact that users might watch or skip over
+                            your ad unit while watching a movie, but, they are unlikely to abandon the movie simply
+                            because of an ad.
+                        </p>
+                        <p>
+                            Ads can be added to the Advertisment module.
+                            The ads will appear on the single page or after the videos you want to display
+                            Pre-roll and Mid-roll can be added to a video in the dashboard editing option.
+                        </p>
                     </section>
 
                     <hr class="divider">
@@ -899,10 +914,10 @@
                         <p>In the Platform you will have access as soon as you fill in the form for user verification.
                             Dashboard of Video Fx has chart, info for main modules and table with users Acl</p>
 
-                        <p>All data is automatically reflected except in the chart that a configuration must be made in .env<br>
+                        <p>All data is automatically reflected except in the chart that a configuration must be made in
+                            .env<br>
                             -just need to add to the .env file the categories you added in the category module
                         </p>
-
 
                         <div>
                             <pre><code class="html">&lt;
