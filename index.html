@@ -706,141 +706,18 @@
                     ============================ -->
                     <section id="idocs_sidebar">
                         <h2>ACL (Access-Control-List)</h2>
-                        <p class="lead">We have built fixed sidebar navigation with <a target="_blank"
-                                                                                       href="https://getbootstrap.com/docs/4.4/components/scrollspy/">bootstrap
-                            scrollspy</a> function for docs layout. which is automatically update navigation based on
-                            scroll position to indicate which link is currently active in the viewport.</p>
-                        <p>The example below sidebar vertical navigation with bootstrap <a target="_blank"
-                                                                                           href="https://getbootstrap.com/docs/4.4/components/navs/">navs</a>
-                            and <a target="_blank" href="https://getbootstrap.com/docs/4.4/components/scrollspy/">scrollspy</a>
-                            components and section of docs content.</p>
-                        <pre class="pre-scrollable"><code class="html">&lt;!-- Sidebar Navigation
-            ============================ --&gt;
-            &lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-            &lt;ul class=&quot;nav flex-column &quot;&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#item_1&quot;&gt;Item
-            1&lt;/a&gt;
-            &lt;ul class=&quot;nav flex-column&quot;&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_1&quot;&gt;Sub Item
-            1.1&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_2&quot;&gt;Sub Item
-            1.2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2&quot;&gt;Item 2&lt;/a&gt;
-            &lt;ul class=&quot;nav flex-column&quot;&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_1&quot;&gt;Sub Item
-            2.1&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_2&quot;&gt;Sub Item
-            2.2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_3&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-            &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_4&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/div&gt;
 
-            &lt;!-- Docs Content
-            ============================ --&gt;
-            &lt;div class=&quot;idocs-content&quot;&gt;
-            &lt;div class=&quot;container&quot;&gt;
-
-            &lt;!-- Item 1 --&gt;
-            &lt;section id=&quot;item_1&quot;&gt;
-            &lt;h2&gt;Item 1&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 1.1 --&gt;
-            &lt;section id=&quot;item_1_1&quot;&gt;
-            &lt;h2&gt;Item 1.1&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 1.2 --&gt;
-            &lt;section id=&quot;item_1_2&quot;&gt;
-            &lt;h2&gt;Item 1.2&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 2 --&gt;
-            &lt;section id=&quot;item_2&quot;&gt;
-            &lt;h2&gt;Item 2&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 2.1 --&gt;
-            &lt;section id=&quot;item_2_1&quot;&gt;
-            &lt;h2&gt;Item 2.1&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 2.2 --&gt;
-            &lt;section id=&quot;item_2_2&quot;&gt;
-            &lt;h2&gt;Item 2.2&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 3 --&gt;
-            &lt;section id=&quot;item_3&quot;&gt;
-            &lt;h2&gt;Item 3&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-            &lt;hr class=&quot;divider&quot;&gt;
-
-            &lt;!-- Item 4 --&gt;
-            &lt;section id=&quot;item_4&quot;&gt;
-            &lt;h2&gt;Item 4&lt;/h2&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;/section&gt;
-
-            &lt;/div&gt;
-            &lt;/div&gt;
-        </code></pre>
-
-                        <h4>Light Sidebar:</h4>
-                        <p>Light background Color & Dark text for light sidebar. See below image and code for more
-                            inforamtion.</p>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p><a class="popup-img" href="assets/images/sidebar-light.jpg"><img
-                                        class="img-fluid border" src="assets/images/sidebar-light.jpg" alt=""></a></p>
-                            </div>
-                        </div>
-
-                        <p>Add the <code>.bg-light</code> class to the main sidebar navigation div element to display a
-                            light sidebar.</p>
-                        <pre><code>&lt;!-- Sidebar Navigation
-            ============================ --&gt;
-            &lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-            ....
-            &lt;/div&gt;</code></pre>
-
-                        <h4>Dark Sidebar:</h4>
-                        <p>Dark background Color & Light text for dark sidebar. See below image and code for more
-                            inforamtion.</p>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p><a class="popup-img" href="assets/images/sidebar-dark.jpg"><img
-                                        class="img-fluid border" src="assets/images/sidebar-dark.jpg" alt=""></a></p>
-                            </div>
-                        </div>
-
-                        <p>Add the <code>.bg-dark</code> and <code>.docs-navigation-dark</code> class to the main
-                            sidebar navigation div element to display a dark sidebar.</p>
-                        <pre><code>&lt;!-- Sidebar Navigation
-            ============================ --&gt;
-            &lt;div class=&quot;idocs-navigation bg-dark docs-navigation-dark&quot;&gt;
-            ....
-            &lt;/div&gt;</code></pre>
+                        <p>An access control list (ACL) contains rules that grant or deny access to certain digital
+                            environments.</p>
+                        <p>ACLs filter access to allow and/or stop process in system.<br>
+                            A permission is the right to access one or more system objects. A role is a group of
+                            permissions. Roles can be assigned to any user or user group, and a user or user group can
+                            have more than one role. Unlike hierarchical users, a role does not contain another role.
+                        </p>
+                        <p>
+                            Video Fx Dashboard provides management of users who have many roles and roles that have many permissions.
+                            Permission does not need to be modified, as they are automatically added by the system.
+                        </p>
                     </section>
 
                     <hr class="divider">
@@ -852,7 +729,8 @@
                         <p>Ads inserted into videos are classified into Pre-Roll, Mid-Roll, Post-Roll ads based on their
                             position or placement in the video i.e., before, in the middle, or after the video completes
                             playback.</p>
-                        <p> <strong>Pre-roll</strong>  ad is an ad that is played before the video starts to play – which is why it has
+                        <p><strong>Pre-roll</strong> ad is an ad that is played before the video starts to play – which
+                            is why it has
                             the word “pre” in its name. When you click on a video that you want to watch, and if that
                             video has a pre-roll ad associated with it, then the player will first play the pre-roll ad
                             and then begin to display the video that you requested.
@@ -865,7 +743,8 @@
                             of pre-roll ads right at the start of the video – especially if the video is popular and
                             in-demand.
                         </p>
-                        <p><strong>Mid-roll</strong> ads are those ads that are played by interrupting the video playback. The video is
+                        <p><strong>Mid-roll</strong> ads are those ads that are played by interrupting the video
+                            playback. The video is
                             paused, the mid-roll ad is played, and after the mid-roll ad is completed or skipped, the
                             video playback is resumed.
                             All of us have experienced mid-roll ads while watching videos on YouTube or on AVOD-based
